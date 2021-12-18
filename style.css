@@ -263,8 +263,18 @@ opacity: 0.9;
 }
   /* responsive */
 
-  @media (min-height:700px){
+  @media (min-height:750px){
       .main{
         height: calc(100vh - 80px);
       }
+  }
+
+  @media (max-width:494px){
+    .mintBtn{
+      font-size: 1.2rem;
+    }
+
+    .info{
+      font-size: 1.2rem;
+    }
   }
