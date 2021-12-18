@@ -96,7 +96,7 @@ if(count === 1){
 }
 
 if(count === 2){
-    totalPrice.textContent = "0.30";
+    totalPrice.textContent = "0.35";
 }
 
 if(count === 3){
@@ -157,7 +157,7 @@ minusBtn.addEventListener('click', () =>{
 }
 
 if(count === 2){
-    totalPrice.textContent = "0.30";
+    totalPrice.textContent = "0.35";
 }
 
 if(count === 3){
