@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+
 }
+
 body{
     overflow-x: hidden;
 }
@@ -18,13 +20,13 @@ body{
 }
 
 .logo a img{
-    width: 180px;
+    width: 90px;
 }
 
 
 .main{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +35,8 @@ body{
     background-size: cover;
     position: relative;
 }
+
+
 .main::after {
     content: "";
     position: absolute;
@@ -43,18 +47,20 @@ body{
   }
   
 .card{
-    padding: 50px 30px;
+    padding: 50px 30px 30px 30px;
     background-color: black;
     border-radius: 5px;
     z-index: 1111;
     max-width: 430px;
     width: 100%;
     color: white;
+    margin: 40px 20px;
 }
+
 
   .title{
       font-size: 26px;
-      font-weight: bold;
+      font-weight: 900;
       color: white;
       text-align: center;
       margin-bottom: 40px;
@@ -215,20 +221,50 @@ opacity: 0.9;
       font-size: 1.4rem;
       color: white;
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
   }
 
   .mintBtn{
     background: radial-gradient(88% 85.96% at 50% 26.4%,hsla(0,0%,100%,.7) 0,hsla(0,0%,100%,0) 69.79%,hsla(0,0%,100%,0) 100%),#6609ff;
     box-shadow: 4px 38px 62px rgb(0 0 0 / 50%);
-    width: full;
+    width: 100%;
     text-decoration: none;
     color: black;
-    font-weight: 900;
-    font-size: 1.125rem;
+    font-weight: bold !important;
+    font-size: 20px;
     text-align: center;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     display: block;
     border-radius: 1.5rem;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #loginButton{
+    font-weight: 900 !important;
+  }
+
+.mintBtn:hover{
+    background: radial-gradient(88% 85.96% at 50% 26.4%,hsla(0,0%,100%,.7) 0,hsla(0,0%,100%,0) 69.79%,hsla(0,0%,100%,0) 100%),#4104a3;
+    
+}
+#userWallet{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+  word-wrap: break-word;
+  line-height: 1.5;
+
+}
+  /* responsive */
+
+  @media (min-height:700px){
+      .main{
+        height: calc(100vh - 80px);
+      }
   }
